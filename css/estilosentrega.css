@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans); /* importa direccion de la fuente de origuen de google fonts */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/fondoentrega.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.form-regllave{
+    align: center;
+    border-radius:  7px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background: #3b4c54;
+}
+
+.tituloformsala{
+    border-top-left-radius:7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid white;
+    background: #8cb729;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px
+}
+
+.tituloformdocente{
+  border-top-left-radius:7px;
+  border-top-right-radius: 7px;
+  border-bottom: 5px solid white;
+  background: #8cb729;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 100;
+  font-size: 30px
+}
+
+.contenedor-inputs{
+  justify-content: space-between;
+  padding: 10px 30px;
+  display: flex;
+  flex-wrap;
+
+}
+
+input{
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid darkgrey;
+}
+
+.input-48{
+  width: 28%;
+}
+.input-58{
+  align-self: auto;
+  width: 27%;
+}
+
+.input-70{
+  width: 55%;
+}
+
+.input-caracteristicas{
+  font-size: 14px;
+  border-radius: 20px;
+  max-width: 85px;
+  max-height: 80px;
+  min-width: 85%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-buscarcodigosala{
+  border-radius: 20px;
+  width: 28%;
+  align:center;
+  background:#8cb729;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btn-escanearcodigosala{
+
+  border-radius: 20px;
+  width: 28%;
+  align:center;
+  background:#8cb729;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.btn-entregarsala{
+  border-radius: 20px;
+  width: 25%;
+  margin-top: 10px;
+  align:center;
+  background:#8cb729;
+  color: #FFF;
+  cursor: pointer;
+
+}
+.btn-canselarentrega{
+  border-radius: 20px;
+  width: 31%;
+  margin-top: 10px;
+  align:center;
+  background:#ececec;
+  color: #504d4d;
+  cursor: pointer;
+}
+.user-img{
+    padding: 10px;
+    align: center;
+    width: 130px;
+    height: 130px;
+    box-shadow: 0px 0px 3px #848484;
+    border-radius: 50%;
+}

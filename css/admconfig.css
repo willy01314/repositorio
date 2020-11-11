@@ -1,0 +1,249 @@
+/* estilos del contenedor de cabecera */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans); /* importa direccion de la fuente de origuen de google fonts */
+@import url(menu.css);/*importa hoja de estilos del menu a la hoja principal css*/
+
+
+
+* {
+    margin: 0; /* controla margenes del header */
+    padding: 0;/* maneja el espacio del header  */
+    box-sizing: border-box; /* limita las propiedades dentro del header para evitar que se salga  */
+}
+body{
+  font-family: 'open Sans', sans-serif; /* importa la fuente seleccionada  */
+}
+
+header{
+  width: 100%;/*ancho del  header*/
+  height: 50px;/* alto del  header*/
+  background: #333;/* color del header*/
+  color: #fff;/*color del texto del  header*/
+
+  position: fixed;/*pega el contenedor al borde superior */
+  top: 0;/*inicio */
+  left: 0;/*inicio */
+  z-index:100;/*ubica el contenedor sobre todos los elementos*/
+}
+
+.contenedor{
+  width: 98%;/*ancho del contenedor*/
+  margin: auto;/*margen del contenedor*/
+}
+h1 {
+  float: left;/*mantiene el menu flotando*/
+}
+
+header.contenedor{
+  display: table;/*limpia los bordes del contenedor*/
+}
+
+section{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) {
+  .sociales {
+    width: auto;
+  }
+   footer .contenedor {
+     justify-content: space-between;
+   }
+}
+
+@media (min-width:1024px) {
+  .contenedor {
+    width: 1200px;
+  }
+}
+
+
+#banner{
+  margin-top: 0px;
+  position: relative;
+}
+
+#banner img{
+  width: 100%;
+  height: 100%;/*arreglar*/
+}
+
+#banner .contenedor{
+  position: absolute;
+  top: 85%;
+  left: 133%;
+  transform: translateX(-47%) translateY(-50%);
+  color: #fff;
+}
+
+#banner h2 {
+  font-size: 28px;
+}
+
+
+#banner a {
+  text-align: center;
+  display: block;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  margin-top: 9px;
+  border: 5px solid #fff;
+}
+
+#banner a:hover {
+  background: rgba(51, 51, 51, 0.5);
+}
+
+@media (min-width:480px){
+  #banner h2 {
+    font-size: 20px;
+  }
+
+  #banner a {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width:768px){
+  #banner{
+    height: 365px;
+    overflow: hidden;
+  }
+  #banner h2 {
+    font-size: 30px;
+  }
+
+  #banner img{
+    height: auto;
+    margin-top: -100px;
+  }
+}
+
+@media (min-width:1024px){
+  #banner img{
+    height: auto;
+    margin-top: -200px;
+
+  }
+
+  #banner h2 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:480px){
+  #banner h2 {
+    font-size: 20px;
+  }
+
+  #banner a {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width:768px){
+  #banner{
+    height: 365px;
+    overflow: hidden;
+  }
+  #banner h2 {
+    font-size: 30px;
+  }
+
+  #banner img{
+    height: auto;
+    margin-top: -100px;
+  }
+}
+
+@media (min-width:1024px){
+  #banner img{
+    height: auto;
+    margin-top: -200px;
+
+  }
+
+  #banner h2 {
+    font-size: 30px;
+  }
+}
+
+
+#info h3{
+font-size: 40px;
+}
+
+#info h4{
+font-size: 20px;
+}
+
+#info {
+  align: center;
+  margin-top: -35px;
+  position: relative;
+  background:  rgba(35, 55, 77, 0.9);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+#info .contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-uni {
+  margin: 10px;
+}
+
+.info-uni img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+
+}

@@ -1,0 +1,83 @@
+/* estilos del contenedor de cabecera */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans); /* importa direccion de la fuente de origuen de google fonts */
+@import url(menu.css);/*importa hoja de estilos del menu a la hoja principal css*/
+@import url(banner.css);/*importa hoja de estilos del banner a la hoja principal css*/
+@import url(info.css);/*importa hoja de estilos del info a la hoja principal css*/
+
+
+* {
+    margin: 0; /* controla margenes del header */
+    padding: 0;/* maneja el espacio del header  */
+    box-sizing: border-box; /* limita las propiedades dentro del header para evitar que se salga  */
+}
+body{
+  font-family: 'open Sans', sans-serif; /* importa la fuente seleccionada  */
+}
+
+header{
+  width: 100%;/*ancho del  header*/
+  height: 50px;/* alto del  header*/
+  background: #333;/* color del header*/
+  color: #fff;/*color del texto del  header*/
+
+  position: fixed;/*pega el contenedor al borde superior */
+  top: 0;/*inicio */
+  left: 0;/*inicio */
+  z-index:100;/*ubica el contenedor sobre todos los elementos*/
+}
+
+.contenedor{
+  width: 98%;/*ancho del contenedor*/
+  margin: auto;/*margen del contenedor*/
+}
+h1 {
+  float: left;/*mantiene el menu flotando*/
+}
+
+header.contenedor{
+  display: table;/*limpia los bordes del contenedor*/
+}
+
+section{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5px;
+
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media (min-width:768px) {
+  .sociales {
+    width: auto;
+  }
+   footer .contenedor {
+     justify-content: space-between;
+   }
+}
+
+@media (min-width:1024px) {
+  .contenedor {
+    width: 1200px;
+  }
+}
